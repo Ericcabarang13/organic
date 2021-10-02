@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en"  style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+        <header class="bg-white fixed top-0 w-full inset-x-0">
+            <nav class="container flex lg:flex-row flex-col justify-between w-full">
+                <div class="flex flex-row justify-between">
+                    <h1 class="font-lobster  text-3xl ml-4 py-4">Organic</h1>
+                    <button class="text-3xl mr-10 py-4 lg:hidden" id="mobile-menu-button"><i class="fas fa-bars"></i></button>
+                </div>
+                <div class="hidden lg:flex lg:flex-row flex-col justify-between items-center text-center lg:w-4/6 py-4" id="mobile-menu">
+                    <ul class="flex lg:flex-row flex-col font-rubik text-s font-light">
+                        <li class="mb-1 mr-3">
+                            <a href="#home" class="uppercase hover:text-gray-400">Home</a>
+                        </li>
+                        <li class="mb-1 mr-3">
+                            <a href="#trending" class="uppercase hover:text-gray-400">Trending</a>
+                        </li>
+                        <li class="mb-1 mr-3">
+                            <a href="#organic" class="uppercase hover:text-gray-400">Organic</a>
+                        </li>
+                        <li class="mb-1 mr-3">
+                            <a href="#store" class="uppercase hover:text-gray-400">Store</a>
+                        </li>
+                        <li class="mb-1 mr-3">
+                            <a href="#" class="uppercase hover:text-gray-400">Contact</a>
+                        </li>
+                    </ul>
+
+                    <form class="mb-3">
+                        <input type="text" placeholder="Search" class="py-1 px-2 border-2 border-red-500 focus:outline-none rounded-full">
+                        <input type="button" class="cursor-pointer py-1 px-5 -ml-10 border-2 bg-red-500 text-white border-red-500 rounded-full hover:bg-red-400 hover:border-red-400" value="Search">
+                    </form>
+                </div>
+            
+            </nav>
+        </header>
+
+        <!-- HERO -->
+        <section class="lg:h-screen h-96 w-full bg-hero-bg bg-no-repeat bg-cover"  id="home">
+            <div class="lg:w-4/6 w-5/6 text-center lg:h-full lg:pt-72 pt-32">
+                <h1 class="font-rubik lg:text-6xl text-4xl font-bold mb-2">Nature Has Always</h1>
+                <h1 class="font-rubik lg:text-6xl text-4xl font-bold mb-2">Care For Us</h1>
+                <button class="justify-center cursor-pointer border-2 lg:w-1/5 w-2/6 py-1 bg-red-500 text-white border-red-500 rounded-full hover:bg-red-400 hover:border-red-400">More Tips</button>
+            </div>
+        </section>
+
+        <!-- ICON -->
+        <section class="w-full">
+            <div class="container flex flex-col sm:flex-row justify-center sm:pt-24 sm:pb-14 pt-10">
+                <div class="text-center mx-auto mb-10">
+                    <img src="images/mango.jpg" alt="">
+                    <h3 class="font-rubik text-s mt-2">NATURAL</h3>
+                </div>
+                <div class="text-center mx-auto  mb-10">
+                    <img src="images/grapes.jpg" alt="">
+                    <h3 class="font-rubik text-s mt-2">ORAGANIC</h3>
+                </div>
+                <div class="text-center mx-auto  mb-10">
+                    <img src="images/banana.jpg" alt="">
+                    <h3 class="font-rubik text-s mt-2">HEALTH</h3>
+                </div>
+            
+            </div>
+        </section>
+
+        <!-- TRENDING -->
+        <section class="w-full mb-20" id = "trending">
+            <div class="container w-full flex flex-col gap-5">
+                <div class="w-full font-rubik text-center mb-10">
+                    <h1 class="text-5xl font-bold mb-3">What's Trending</h1>
+                    <p class="text-red-500">Be Healthy Organic Food</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 px-7">
+                    <div class="group text-center py-3 bg-gray-100 rounded hover:bg-white hover:shadow-2xl hover:border-transparent">
+                        <img src="images/energy.png">
+                        <h3 class="font-bold mb-1 text-lg">Energy Food</h3>
+                        <p class="text-gray-600">$39.99</p>
+                    </div>
+
+                    <div class="group text-center py-3 bg-gray-100 rounded hover:bg-white hover:shadow-2xl hover:border-transparent">
+                        <img src="images/beans.png">
+                        <h3 class="font-bold mb-1 text-lg">Green Beans</h3>
+                        <p class="text-gray-600">$49.99</p>
+                    </div>
+
+                    <div class="group text-center py-3 bg-gray-100 rounded hover:bg-white hover:shadow-2xl hover:border-transparent">
+                        <img src="images/120_copy-removebg-preview.png">
+                        <h3 class="font-bold mb-1 text-lg">Healthy Milk</h3>
+                        <p class="text-gray-600">$29.99</p>
+                    </div>
+
+                    <div class="group text-center py-3 bg-gray-100 rounded hover:bg-white hover:shadow-2xl hover:border-transparent">
+                        <img src="images/refill.png">
+                        <h3 class="font-bold mb-1 text-lg">Refill Pack</h3>
+                        <p class="text-gray-600">$59.99</p>
+                    </div>
+                </div>
+
+                <button class="mx-auto cursor-pointer border-2 lg:w-2/12 w-1/3 py-1 mt-4 bg-red-500 text-white border-red-500 rounded-full hover:bg-red-400 hover:border-red-400">Click For More</button>
+            </div>
+        </section>
+
+        <!-- ORGANIC -->
+        <section class="w-full mb-20" id="organic">
+            <div class="container w-full flex flex-col gap-5">
+                <div class="w-full font-rubik text-center mb-10">
+                    <h1 class="text-5xl font-bold mb-3">Welcome To Our Organic Food Society</h1>
+                    <p class="text-red-500">Be Healthy Organic Food</p>
+                </div>
+
+                <div class="grid grid-cols-1 px-10 md:grid-cols-3 w-full gap-7">
+                    <div>
+                        <img src="images/woman.jpg" class="rounded">
+                        <h3 class="text-lg font-semibold mt-3">Best Quality Product</h3>
+                        <p class="text-justify mt-3 ">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum quas asperiores error ut cumque consequatur, fugiat explicabo labore eum vel.
+                        </p>
+                    </div>
+
+                    <div>
+                        <img src="images/gf.jpg" class="rounded">
+                        <h3 class="text-lg font-semibold mt-3">Organic Food</h3>
+                        <p class="text-justify mt-3">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum quas asperiores error ut cumque consequatur, fugiat explicabo labore eum vel.
+                        </p>
+                    </div>
+
+                    <div>
+                        <img src="images/woman.jpg" class="rounded">
+                        <h3 class="text-lg font-semibold mt-3">Best Quality Product</h3>
+                        <p class="text-justify mt-3">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum quas asperiores error ut cumque consequatur, fugiat explicabo labore eum vel.
+                        </p>
+                    </div>
+                </div>
+
+                <button class="mx-auto cursor-pointer border-2 lg:w-2/12 w-1/3 py-1 mt-4 bg-red-500 text-white border-red-500 rounded-full hover:bg-red-400 hover:border-red-400">Submit</button>
+            </div>
+        </section>
+
+        <!-- STORE -->
+        <section class="w-full mb-20" id = "store">
+            <div class="container w-full flex flex-col gap-5">
+                <div class="w-full font-rubik text-center mb-10">
+                    <h1 class="text-5xl font-bold mb-3">Explore Our Store</h1>
+                    <p class="text-red-500">Pick Your Product From Our Store</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 px-7">
+                    <div class="group text-center py-3 bg-gray-100 rounded hover:bg-white hover:shadow-2xl hover:border-transparent">
+                        <img src="images/energy.png">
+                        <h3 class="font-bold mb-1 text-lg">Energy Food</h3>
+                        <p class="text-gray-600">$39.99</p>
+                    </div>
+
+                    <div class="group text-center py-3 bg-gray-100 rounded hover:bg-white hover:shadow-2xl hover:border-transparent">
+                        <img src="images/beans.png">
+                        <h3 class="font-bold mb-1 text-lg">Green Beans</h3>
+                        <p class="text-gray-600">$49.99</p>
+                    </div>
+
+                    <div class="group text-center py-3 bg-gray-100 rounded hover:bg-white hover:shadow-2xl hover:border-transparent">
+                        <img src="images/120_copy-removebg-preview.png">
+                        <h3 class="font-bold mb-1 text-lg">Healthy Milk</h3>
+                        <p class="text-gray-600">$29.99</p>
+                    </div>
+
+                    <div class="group text-center py-3 bg-gray-100 rounded hover:bg-white hover:shadow-2xl hover:border-transparent">
+                        <img src="images/refill.png">
+                        <h3 class="font-bold mb-1 text-lg">Refill Pack</h3>
+                        <p class="text-gray-600">$59.99</p>
+                    </div>
+
+                    <div class="group text-center py-3 bg-gray-100 rounded hover:bg-white hover:shadow-2xl hover:border-transparent">
+                        <img src="images/energy.png">
+                        <h3 class="font-bold mb-1 text-lg">Energy Food</h3>
+                        <p class="text-gray-600">$39.99</p>
+                    </div>
+
+                    <div class="group text-center py-3 bg-gray-100 rounded hover:bg-white hover:shadow-2xl hover:border-transparent">
+                        <img src="images/beans.png">
+                        <h3 class="font-bold mb-1 text-lg">Green Beans</h3>
+                        <p class="text-gray-600">$49.99</p>
+                    </div>
+
+                    <div class="group text-center py-3 bg-gray-100 rounded hover:bg-white hover:shadow-2xl hover:border-transparent">
+                        <img src="images/120_copy-removebg-preview.png">
+                        <h3 class="font-bold mb-1 text-lg">Healthy Milk</h3>
+                        <p class="text-gray-600">$29.99</p>
+                    </div>
+
+                    <div class="group text-center py-3 bg-gray-100 rounded hover:bg-white hover:shadow-2xl hover:border-transparent">
+                        <img src="images/refill.png">
+                        <h3 class="font-bold mb-1 text-lg">Refill Pack</h3>
+                        <p class="text-gray-600">$59.99</p>
+                    </div>
+
+                    <div class="group text-center py-3 bg-gray-100 rounded hover:bg-white hover:shadow-2xl hover:border-transparent">
+                        <img src="images/energy.png">
+                        <h3 class="font-bold mb-1 text-lg">Energy Food</h3>
+                        <p class="text-gray-600">$39.99</p>
+                    </div>
+
+                    <div class="group text-center py-3 bg-gray-100 rounded hover:bg-white hover:shadow-2xl hover:border-transparent">
+                        <img src="images/beans.png">
+                        <h3 class="font-bold mb-1 text-lg">Green Beans</h3>
+                        <p class="text-gray-600">$49.99</p>
+                    </div>
+
+                    <div class="group text-center py-3 bg-gray-100 rounded hover:bg-white hover:shadow-2xl hover:border-transparent">
+                        <img src="images/120_copy-removebg-preview.png">
+                        <h3 class="font-bold mb-1 text-lg">Healthy Milk</h3>
+                        <p class="text-gray-600">$29.99</p>
+                    </div>
+
+                    <div class="group text-center py-3 bg-gray-100 rounded hover:bg-white hover:shadow-2xl hover:border-transparent">
+                        <img src="images/refill.png">
+                        <h3 class="font-bold mb-1 text-lg">Refill Pack</h3>
+                        <p class="text-gray-600">$59.99</p>
+                    </div>
+                </div>
+
+               
+            </div>
+        </section>
+        
+         <!-- HERO -->
+         <section class="lg:h-screen h-96 w-full bg-hero2-bg bg-no-repeat bg-cover"  id="home">
+            <div class="lg:w-4/6 w-5/6 ml-10 lg:h-full lg:pt-80 pt-32">
+                <h1 class="font-lobster lg:text-6xl text-4xl font-medium text-white mb-2">Unlock Your Potentail With</h1>
+                <h1 class="font-lobster lg:text-6xl text-4xl font-medium text-white  mb-5">Good Nutrition</h1>
+                <p class="mb-5 font-rubik text-lg">Always Get Good Food</p>
+                <button class="justify-center cursor-pointer border-2 lg:w-1/5 w-2/6 py-1 bg-red-500 text-white border-red-500 rounded-full hover:bg-red-400 hover:border-red-400">More From US</button>
+            </div>
+        </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
